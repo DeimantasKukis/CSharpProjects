@@ -1,0 +1,12 @@
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\E-shop.exe
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\E-shop.dll
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\E-shop.deps.json
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\E-shop.runtimeconfig.json
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\E-shop.pdb
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\MySqlConnector.dll
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

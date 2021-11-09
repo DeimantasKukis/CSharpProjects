@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.css"
+      media="screen,projection"
+    />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/DeimantasKukis/WEB/master/eShopPIctures/logo_spa.png"
+      type="image/x-icon"
+    />
+
+    <title>Result Spa</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="row container">
+      <h1>Sukurti produktą</h1>
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input
+              id="productName"
+              type="text"
+              class="validate"
+              autocomplete="off"
+            />
+            <label for="productName">Produkto pavadinimas</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="productDescription" type="text" class="validate" />
+            <label for="productDescription">Produkto aprašymas</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="productId" type="text" class="validate" />
+            <label for="productId">Produkto numeris</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="photo" type="text" class="validate" />
+            <label for="photo">Nuotraukos nuoroda</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="startPrice" type="text" class="validate" />
+            <label for="startPrice">Pradinė kainą</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="discount" type="text" class="validate" />
+            <label for="discount">Nuolaidą eurais</label>
+          </div>
+        </div>
+
+        <button class="btn waves-effect waves-light" id="send">
+          Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/ProductClient.js"></script>
+    <script type="text/javascript" src="js/library.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".datepicker");
+        let options = { format: "yyyy-mm-dd" };
+        var instances = M.Datepicker.init(elems, options);
+      });
+    </script>
+    <script>
+      document.getElementById("send").addEventListener("click", function () {
+        event.preventDefault();
+
+        let product = {
+          productName: document.getElementById("productName").value,
+          Id: document.getElementById("productId").value,
+          photo: document.getElementById("photo").value,
+          startPrice: document.getElementById("startPrice").value,
+          discount: document.getElementById("discount").value,
+          productDescription:
+            document.getElementById("productDescription").value,
+        };
+
+        createProduct(product).then((response) => console.log(response));
+      });
+    </script>
+  </body>
+</html>

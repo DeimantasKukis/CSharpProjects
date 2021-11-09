@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Deimantas\Desktop\C #\E-shop\E-shop\bin\Release\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2021-10-14T15:20:50.3808877Z;True|2021-10-14T18:20:34.5608525+03:00;True|2021-10-14T18:09:01.7378833+03:00;True|2021-09-28T21:32:09.0099038+03:00;</History>
+  </PropertyGroup>
+</Project>
