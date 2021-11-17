@@ -12,7 +12,7 @@ namespace DentalClinic
     {
         public SqlConnection GetCon()
         {
-            SqlConnection Con = new SqlConnection(); // kodas 59 minutei
+            SqlConnection Con = new SqlConnection(); 
             Con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Deimantas\Documents\DentalDb.mdf;Integrated Security=True;Connect Timeout=30";
             return Con;
         }

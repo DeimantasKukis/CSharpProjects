@@ -62,7 +62,8 @@ namespace DentalClinic
             this.PatNameTb = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.PatientDGV = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -72,7 +73,7 @@ namespace DentalClinic
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -287,6 +288,7 @@ namespace DentalClinic
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.AllergyTb);
             this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.label17);
@@ -359,7 +361,7 @@ namespace DentalClinic
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(326, 175);
+            this.button1.Location = new System.Drawing.Point(299, 175);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 27);
             this.button1.TabIndex = 14;
@@ -407,7 +409,7 @@ namespace DentalClinic
             this.PatPhoneTb.Name = "PatPhoneTb";
             this.PatPhoneTb.Size = new System.Drawing.Size(166, 29);
             this.PatPhoneTb.TabIndex = 17;
-            this.PatPhoneTb.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            
             // 
             // label14
             // 
@@ -419,7 +421,7 @@ namespace DentalClinic
             this.label14.Size = new System.Drawing.Size(83, 31);
             this.label14.TabIndex = 16;
             this.label14.Text = "Phone";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
+           
             // 
             // PatNameTb
             // 
@@ -449,16 +451,28 @@ namespace DentalClinic
             this.textBox5.TabIndex = 25;
             this.textBox5.Text = "Filter By Patient Name";
             // 
-            // dataGridView1
+            // PatientDGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(247, 305);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(766, 190);
-            this.dataGridView1.TabIndex = 24;
+            this.PatientDGV.BackgroundColor = System.Drawing.Color.White;
+            this.PatientDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.PatientDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PatientDGV.Location = new System.Drawing.Point(247, 305);
+            this.PatientDGV.Name = "PatientDGV";
+            this.PatientDGV.RowTemplate.Height = 25;
+            this.PatientDGV.Size = new System.Drawing.Size(766, 190);
+            this.PatientDGV.TabIndex = 24;
+            this.PatientDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PatientDGV_CellContentClick);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(404, 175);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 27);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Patient
             // 
@@ -468,13 +482,14 @@ namespace DentalClinic
             this.ClientSize = new System.Drawing.Size(1022, 512);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.PatientDGV);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient";
+            this.Load += new System.EventHandler(this.Patient_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -486,7 +501,7 @@ namespace DentalClinic
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -526,6 +541,7 @@ namespace DentalClinic
         private System.Windows.Forms.TextBox AddressTb;
         private System.Windows.Forms.Label Add;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView PatientDGV;
+        private System.Windows.Forms.Button button2;
     }
 }
