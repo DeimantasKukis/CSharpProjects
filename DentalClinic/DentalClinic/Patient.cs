@@ -34,18 +34,23 @@ namespace DentalClinic
             {
                 Pat.AddPatient(query);
                 MessageBox.Show("Patient Succesfully Added");
+                populate();
             } catch(Exception Ex)
             {
                 MessageBox.Show(Ex.Message);
             }
         }
-
-        private void Patient_Load(object sender, EventArgs e)
+        void populate()
         {
             MyPatient Pat = new MyPatient();
             string query = "select * from PatientTbl";
             DataSet ds = Pat.ShowPatient(query);
             PatientDGV.DataSource = ds.Tables[0];
+        }
+
+        private void Patient_Load(object sender, EventArgs e)
+        {
+            populate();
         }
         int key = 0;
         private void PatientDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -79,6 +84,7 @@ namespace DentalClinic
                     string query = "Delete from PatientTbl where PatId=" + key + "";
                     Pat.DeletePatient(query);
                     MessageBox.Show("Patient Succesfully Deleted");
+                    populate();
 
                 }
                 catch(Exception Ex)

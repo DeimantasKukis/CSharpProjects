@@ -16,21 +16,24 @@ namespace distributedWarehouses.Service
                     "000001",
                     "Žaliavų sandelis",
                     100,
-                    200));
+                    200,
+                    0));
             warehouses.Add(
                 new warehouse(
                     "Hyper",
                     "000002",
                     "Statybiniu prekių sandelis",
                     200,
-                    100));
+                    100,
+                    0));
             warehouses.Add(
                 new warehouse(
                     "Test",
                     "000003",
                     "Testtest",
                     500,
-                    600));
+                    600,
+                    5));
             return warehouses;
         }
     }

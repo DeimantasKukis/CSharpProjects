@@ -77,6 +77,27 @@ namespace distributedWarehouses.Controllers
             }
             return new OkObjectResult(filteredWarehouses);
         }
+        //[HttpGet("Reserve warehouse item")]
+        //public IActionResult ReserveItem(string text, double resItems)
+        //{
+        //    var service = new WarehouseService();
 
+        //    var warehouses = service.GetWarehouses();
+
+        //    var filteredWarehouses =new List<warehouse>();
+
+        //    foreach(var warebouse in warehouses)
+        //    {
+        //        if (warebouse.GetInformation().Contains(text))
+        //        {
+                    
+        //            filteredWarehouses.Add(warebouse);
+        //            warehouse.ReserveItem += resItems;
+        //        }
+                
+        //    }
+        //    return new OkObjectResult(filteredWarehouses);
+        //}
+        
     }
 }

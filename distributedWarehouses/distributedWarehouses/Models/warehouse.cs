@@ -7,13 +7,14 @@ namespace distributedWarehouses
 {
     public class warehouse
     {
-        public warehouse(string warehouseName, string id, string warehouseDescription, double itemsLeft,double itemsDeliveredSoon)
+        public warehouse(string warehouseName, string id, string warehouseDescription, double itemsLeft,double itemsDeliveredSoon, double reservedItem)
         {
             WarehouseName = warehouseName;
             Id = id;
             WarehouseDescription = warehouseDescription;
             ItemsLeft = itemsLeft;
             ItemsDeliveredSoon = itemsDeliveredSoon;
+            ReservedItem = reservedItem;
         }
 
         public string WarehouseName { get; }
@@ -21,6 +22,8 @@ namespace distributedWarehouses
         public string WarehouseDescription { get; }
         public double ItemsLeft { get; }
         public double ItemsDeliveredSoon { get; }
+        public double ReservedItem { get; }
+
         public string GetInformation()
         {
             return $"{WarehouseName} {Id} {WarehouseDescription} {ItemsLeft} {ItemsDeliveredSoon}";
