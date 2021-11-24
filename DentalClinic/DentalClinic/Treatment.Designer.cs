@@ -47,18 +47,16 @@ namespace DentalClinic
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TreatDesc = new System.Windows.Forms.TextBox();
+            this.TreatCost = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.TretNameTb = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TreatmentDGV = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -68,7 +66,7 @@ namespace DentalClinic
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TreatmentDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -272,88 +270,46 @@ namespace DentalClinic
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.TreatDesc);
+            this.panel2.Controls.Add(this.TreatCost);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.TretNameTb);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.dateTimePicker2);
-            this.panel2.Controls.Add(this.label13);
             this.panel2.Location = new System.Drawing.Point(222, 60);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(766, 188);
             this.panel2.TabIndex = 9;
             // 
-            // button1
+            // TreatDesc
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(320, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 27);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.TreatDesc.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TreatDesc.Location = new System.Drawing.Point(153, 74);
+            this.TreatDesc.Multiline = true;
+            this.TreatDesc.Name = "TreatDesc";
+            this.TreatDesc.Size = new System.Drawing.Size(166, 62);
+            this.TreatDesc.TabIndex = 21;
             // 
-            // dateTimePicker2
+            // TreatCost
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(490, 88);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(166, 29);
-            this.dateTimePicker2.TabIndex = 13;
+            this.TreatCost.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TreatCost.Location = new System.Drawing.Point(490, 15);
+            this.TreatCost.Name = "TreatCost";
+            this.TreatCost.Size = new System.Drawing.Size(166, 29);
+            this.TreatCost.TabIndex = 19;
+            this.TreatCost.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // label13
+            // label15
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.Cyan;
-            this.label13.Location = new System.Drawing.Point(399, 90);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 31);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Time";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.Cyan;
-            this.label9.Location = new System.Drawing.Point(222, 12);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 31);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Treatment";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(153, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 29);
-            this.textBox1.TabIndex = 17;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.Cyan;
-            this.label10.Location = new System.Drawing.Point(47, 13);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 31);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Name";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(490, 15);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 29);
-            this.textBox2.TabIndex = 19;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.ForeColor = System.Drawing.Color.Cyan;
+            this.label15.Location = new System.Drawing.Point(19, 70);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(140, 31);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "Description";
             // 
             // label11
             // 
@@ -367,25 +323,46 @@ namespace DentalClinic
             this.label11.Text = "Cost";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
-            // textBox3
+            // TretNameTb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(153, 74);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 62);
-            this.textBox3.TabIndex = 21;
+            this.TretNameTb.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TretNameTb.Location = new System.Drawing.Point(153, 16);
+            this.TretNameTb.Name = "TretNameTb";
+            this.TretNameTb.Size = new System.Drawing.Size(166, 29);
+            this.TretNameTb.TabIndex = 17;
             // 
-            // label15
+            // button1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.Cyan;
-            this.label15.Location = new System.Drawing.Point(19, 70);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(140, 31);
-            this.label15.TabIndex = 20;
-            this.label15.Text = "Description";
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(320, 149);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 27);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.Cyan;
+            this.label10.Location = new System.Drawing.Point(47, 13);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(77, 31);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Name";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.Cyan;
+            this.label9.Location = new System.Drawing.Point(222, 12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(124, 31);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Treatment";
             // 
             // textBox5
             // 
@@ -396,25 +373,26 @@ namespace DentalClinic
             this.textBox5.TabIndex = 27;
             this.textBox5.Text = "Filter By Name";
             // 
-            // dataGridView1
+            // TreatmentDGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(222, 283);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(766, 190);
-            this.dataGridView1.TabIndex = 26;
+            this.TreatmentDGV.BackgroundColor = System.Drawing.Color.White;
+            this.TreatmentDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.TreatmentDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TreatmentDGV.Location = new System.Drawing.Point(222, 283);
+            this.TreatmentDGV.Name = "TreatmentDGV";
+            this.TreatmentDGV.RowTemplate.Height = 25;
+            this.TreatmentDGV.Size = new System.Drawing.Size(766, 190);
+            this.TreatmentDGV.TabIndex = 28;
+            
             // 
             // Treatment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 473);
+            this.Controls.Add(this.TreatmentDGV);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -432,7 +410,7 @@ namespace DentalClinic
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TreatmentDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -458,16 +436,14 @@ namespace DentalClinic
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TreatCost;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TretNameTb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TreatDesc;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView TreatmentDGV;
     }
 }

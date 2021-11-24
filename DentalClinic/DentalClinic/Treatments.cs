@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Data;
 
 namespace DentalClinic
 {
-    class MyPatient
+    class Treatments
     {
         public void AddPatient(string query)
         {
