@@ -94,5 +94,29 @@ namespace DentalClinic
             }
             
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MyPatient Pat = new MyPatient();
+            if (key == 0)
+            {
+                MessageBox.Show("Select The Patient");
+            }
+            else
+            {
+                try
+                {
+                    string query = "Update PatientTbl set PatName='" + PatNameTb.Text + "',PatPhone='"+PatPhoneTb.Text+"',PatAddress='"+AddressTb.Text+"',PatDOB='"+DOBDate.Value.Date+"',PatGender='"+GenCb.SelectedItem.ToString()+"',PatAllergies='"+AllergyTb.Text+"'where PatId="+key+"";
+                    Pat.DeletePatient(query);
+                    MessageBox.Show("Patient Succesfully Updated");
+                    populate();
+
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }

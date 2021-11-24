@@ -48,6 +48,7 @@ namespace DentalClinic
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.AllergyTb = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -63,7 +64,7 @@ namespace DentalClinic
             this.label10 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.PatientDGV = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -288,6 +289,7 @@ namespace DentalClinic
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.AllergyTb);
             this.panel2.Controls.Add(this.label18);
@@ -306,6 +308,17 @@ namespace DentalClinic
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(766, 205);
             this.panel2.TabIndex = 8;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(354, 175);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 27);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // AllergyTb
             // 
@@ -361,7 +374,7 @@ namespace DentalClinic
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(299, 175);
+            this.button1.Location = new System.Drawing.Point(252, 175);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 27);
             this.button1.TabIndex = 14;
@@ -409,7 +422,6 @@ namespace DentalClinic
             this.PatPhoneTb.Name = "PatPhoneTb";
             this.PatPhoneTb.Size = new System.Drawing.Size(166, 29);
             this.PatPhoneTb.TabIndex = 17;
-            
             // 
             // label14
             // 
@@ -421,7 +433,6 @@ namespace DentalClinic
             this.label14.Size = new System.Drawing.Size(83, 31);
             this.label14.TabIndex = 16;
             this.label14.Text = "Phone";
-           
             // 
             // PatNameTb
             // 
@@ -463,16 +474,16 @@ namespace DentalClinic
             this.PatientDGV.TabIndex = 24;
             this.PatientDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PatientDGV_CellContentClick);
             // 
-            // button2
+            // button3
             // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(404, 175);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 27);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(456, 175);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(96, 27);
+            this.button3.TabIndex = 25;
+            this.button3.Text = "Edit";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Patient
             // 
@@ -543,5 +554,6 @@ namespace DentalClinic
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.DataGridView PatientDGV;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -77,6 +77,22 @@ namespace distributedWarehouses.Controllers
             }
             return new OkObjectResult(filteredWarehouses);
         }
+        // DELETE: api/Products/5
+        //[HttpGet]
+        //public IHttpActionResult DeleteProduct(int id)
+        //{
+        //    Product product = service.GetWarehouses().Find(id);
+        //    if (product == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    db.Products.Remove(product);
+        //    db.SaveChanges();
+
+        //    return Ok(product);
+        //}
+
         //[HttpGet("Reserve warehouse item")]
         //public IActionResult ReserveItem(string text, double resItems)
         //{
@@ -90,14 +106,14 @@ namespace distributedWarehouses.Controllers
         //    {
         //        if (warebouse.GetInformation().Contains(text))
         //        {
-                    
+
         //            filteredWarehouses.Add(warebouse);
         //            warehouse.ReserveItem += resItems;
         //        }
-                
+
         //    }
         //    return new OkObjectResult(filteredWarehouses);
         //}
-        
+
     }
 }
