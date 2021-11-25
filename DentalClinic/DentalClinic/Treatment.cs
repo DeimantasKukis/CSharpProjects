@@ -96,5 +96,29 @@ namespace DentalClinic
         {
             populate();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MyPatient Pat = new MyPatient();
+            if (key == 0)
+            {
+                MessageBox.Show("Select The Treatment");
+            }
+            else
+            {
+                try
+                {
+                    string query = "Delete from TreatmentTbl where TreatId=" + key + "";
+                    Pat.DeletePatient(query);
+                    MessageBox.Show("Treatment Succesfully Deleted");
+                    populate();
+
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }

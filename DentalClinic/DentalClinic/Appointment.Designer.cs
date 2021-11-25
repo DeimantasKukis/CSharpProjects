@@ -49,14 +49,14 @@ namespace DentalClinic
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Time = new System.Windows.Forms.DateTimePicker();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.TreatmentCb = new System.Windows.Forms.ComboBox();
+            this.PatientCb = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
@@ -131,7 +131,6 @@ namespace DentalClinic
             this.label7.TabIndex = 11;
             this.label7.Text = "Dashboard";
             this.label7.UseWaitCursor = true;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBox6
             // 
@@ -143,7 +142,6 @@ namespace DentalClinic
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.UseWaitCursor = true;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label6
             // 
@@ -179,7 +177,6 @@ namespace DentalClinic
             this.label5.TabIndex = 7;
             this.label5.Text = "Prescription";
             this.label5.UseWaitCursor = true;
-            this.label5.Click += new System.EventHandler(this.label4_Click);
             // 
             // label4
             // 
@@ -192,7 +189,6 @@ namespace DentalClinic
             this.label4.TabIndex = 7;
             this.label4.Text = "Treatment";
             this.label4.UseWaitCursor = true;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -216,7 +212,6 @@ namespace DentalClinic
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.UseWaitCursor = true;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox3
             // 
@@ -228,7 +223,6 @@ namespace DentalClinic
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.UseWaitCursor = true;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox1
             // 
@@ -240,7 +234,6 @@ namespace DentalClinic
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.UseWaitCursor = true;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
@@ -291,14 +284,14 @@ namespace DentalClinic
             // panel2
             // 
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.dateTimePicker2);
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.Time);
+            this.panel2.Controls.Add(this.Date);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.TreatmentCb);
+            this.panel2.Controls.Add(this.PatientCb);
             this.panel2.Location = new System.Drawing.Point(231, 81);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(766, 188);
@@ -313,24 +306,25 @@ namespace DentalClinic
             this.button1.TabIndex = 14;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dateTimePicker2
+            // Time
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(435, 92);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker2.TabIndex = 13;
+            this.Time.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.Time.Location = new System.Drawing.Point(435, 92);
+            this.Time.Name = "Time";
+            this.Time.Size = new System.Drawing.Size(200, 29);
+            this.Time.TabIndex = 13;
             // 
-            // dateTimePicker1
+            // Date
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(435, 19);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker1.TabIndex = 8;
+            this.Date.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Date.Location = new System.Drawing.Point(435, 19);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(200, 29);
+            this.Date.TabIndex = 8;
             // 
             // label13
             // 
@@ -353,7 +347,6 @@ namespace DentalClinic
             this.label12.Size = new System.Drawing.Size(65, 31);
             this.label12.TabIndex = 11;
             this.label12.Text = "Date";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -376,25 +369,24 @@ namespace DentalClinic
             this.label10.Size = new System.Drawing.Size(90, 31);
             this.label10.TabIndex = 8;
             this.label10.Text = "Patient";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // comboBox2
+            // TreatmentCb
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(149, 90);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(143, 29);
-            this.comboBox2.TabIndex = 9;
+            this.TreatmentCb.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TreatmentCb.FormattingEnabled = true;
+            this.TreatmentCb.Location = new System.Drawing.Point(149, 90);
+            this.TreatmentCb.Name = "TreatmentCb";
+            this.TreatmentCb.Size = new System.Drawing.Size(143, 29);
+            this.TreatmentCb.TabIndex = 9;
             // 
-            // comboBox1
+            // PatientCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(149, 23);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(143, 29);
-            this.comboBox1.TabIndex = 8;
+            this.PatientCb.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PatientCb.FormattingEnabled = true;
+            this.PatientCb.Location = new System.Drawing.Point(149, 23);
+            this.PatientCb.Name = "PatientCb";
+            this.PatientCb.Size = new System.Drawing.Size(143, 29);
+            this.PatientCb.TabIndex = 8;
             // 
             // dataGridView1
             // 
@@ -415,7 +407,6 @@ namespace DentalClinic
             this.textBox1.Size = new System.Drawing.Size(129, 23);
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "Filter By Patient Name";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Appointment
             // 
@@ -432,6 +423,7 @@ namespace DentalClinic
             this.Name = "Appointment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Appointment";
+            this.Load += new System.EventHandler(this.Appointment_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -469,14 +461,14 @@ namespace DentalClinic
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox PatientCb;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox TreatmentCb;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker Time;
+        private System.Windows.Forms.DateTimePicker Date;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
