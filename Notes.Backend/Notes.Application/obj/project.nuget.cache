@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DUOAe3GU62SvubMUfQQMV8IV+CZtUvLa3Jva0nzr9LTEU98y8WT/mQDw7FNgguYRa+2X0A5+Uvco/Lr88S/x3g==",
+  "dgSpecHash": "rZScWagM6xmFY4gnVj2yfSf+QKlg9WrAqVUObnXlIiDsNtyhJO7gctWk25WtgqESPLb1wGXSJSQJRmZPy5XTDg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Application\\Notes.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Deimantas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Deimantas\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.5\\microsoft.entityframeworkcore.5.0.5.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.5\\microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
