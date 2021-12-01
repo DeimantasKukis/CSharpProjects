@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GkqgvKGxnQEAJLUxibz6dbmR59nq6vfBRHV36mmothQB1ToVcAiAmfbStlvBSex9h3rKSr9JPccfbMaFWLwWiw==",
+  "dgSpecHash": "wMihcWi7b9Equ1+P9LnaWK++lz51ENhU8Ii12+hBewOKSstAZleT/0vkyFlZ4qMCaiwIPMpxlR1jf9Rhhz8Xeg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Persistence\\Notes.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Deimantas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Deimantas\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.5\\microsoft.data.sqlite.core.5.0.5.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

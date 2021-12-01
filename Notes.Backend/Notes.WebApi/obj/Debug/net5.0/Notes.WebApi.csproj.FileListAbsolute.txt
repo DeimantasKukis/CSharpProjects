@@ -1,0 +1,6 @@
+C:\Users\Deimantas\Desktop\Csharp projects\Notes.Backend\Notes.WebApi\obj\Debug\net5.0\Notes.WebApi.csproj.AssemblyReference.cache
+C:\Users\Deimantas\Desktop\Csharp projects\Notes.Backend\Notes.WebApi\obj\Debug\net5.0\Notes.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Deimantas\Desktop\Csharp projects\Notes.Backend\Notes.WebApi\obj\Debug\net5.0\Notes.WebApi.AssemblyInfoInputs.cache
+C:\Users\Deimantas\Desktop\Csharp projects\Notes.Backend\Notes.WebApi\obj\Debug\net5.0\Notes.WebApi.AssemblyInfo.cs
+C:\Users\Deimantas\Desktop\Csharp projects\Notes.Backend\Notes.WebApi\obj\Debug\net5.0\Notes.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\Deimantas\Desktop\Csharp projects\Notes.Backend\Notes.WebApi\obj\Debug\net5.0\Notes.WebApi.MvcApplicationPartsAssemblyInfo.cache
