@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pgEJgW96SoCaS9DzICD+OYbecX0XCa/pE7Y+e5hrZ7WtXpAxbHly5bCVVrKUcbF8AbTuiC//h2XHOO2uaOeN4A==",
+  "dgSpecHash": "5s4oY8u95069yfX7O6/vQHuzBAYMQwHnnf4IIVPaOPDgILPw49lrhJcE4rZiKDSt38gLF3kOws3EeXoKWZ0mpw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Identity\\Notes.Identity\\Notes.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Deimantas\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\identityserver4\\4.1.2\\identityserver4.4.1.2.nupkg.sha512",
+    "C:\\Users\\Deimantas\\.nuget\\packages\\identityserver4.aspnetidentity\\4.1.2\\identityserver4.aspnetidentity.4.1.2.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\identityserver4.storage\\4.1.2\\identityserver4.storage.4.1.2.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.0\\microsoft.aspnetcore.authentication.openidconnect.3.1.0.nupkg.sha512",
     "C:\\Users\\Deimantas\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.5\\microsoft.aspnetcore.cryptography.internal.5.0.5.nupkg.sha512",
