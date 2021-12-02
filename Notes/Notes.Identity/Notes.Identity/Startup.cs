@@ -2,6 +2,7 @@ using IdentityServer4.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
@@ -13,15 +14,18 @@ namespace Notes.Identity
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public IConfiguration AppCOnfiguration { get; }
+        public Startup(IConfiguration configuration) =>
+            AppCOnfiguration = configuration;
+
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString = AppCOnfiguration.GetValue<string>("DbConnection");
             services.AddIdentityServer()
-                .AddInMemoryApiResources(new List<ApiResource>())
-                .AddInMemoryIdentityResources(new List<IdentityResource>())
-                .AddInMemoryApiScopes(new List<ApiScope>())
-                .AddInMemoryClients(new List<Client>())
+                .AddInMemoryApiResources(Configuration.ApiResources)
+                .AddInMemoryIdentityResources(Configuration.IdentityResources)
+                .AddInMemoryApiScopes(Configuration.ApiScopes)
+                .AddInMemoryClients(Configuration.Clients)
                 .AddDeveloperSigningCredential();
         }
 
