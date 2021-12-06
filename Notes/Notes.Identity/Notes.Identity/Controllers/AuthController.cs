@@ -1,4 +1,5 @@
-﻿using IdentityServer4.Services;
+﻿using IdentityServer4.Models;
+using IdentityServer4.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Notes.Identity.Models;
@@ -77,6 +78,13 @@ namespace Notes.Identity.Controllers
             }
             ModelState.AddModelError(string.Empty, "Error occurred");
             return View(viewModel);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Logout(string logoutId)
+        {
+            await _signInManager.SignOutAsync();
+            var logoutRequest = await _interactionService.GetLogoutContextAsync(logoutId);
+            return Redirect(logoutRequest.PostLogoutRedirectUri);
         }
     }
 }
