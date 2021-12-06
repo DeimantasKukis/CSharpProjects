@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Application\\Notes.Application.csproj": {}
+    "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Application\\Notes.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Application\\Notes.Application.csproj": {
+    "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Application\\Notes.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Application\\Notes.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Application\\Notes.Application.csproj",
         "projectName": "Notes.Application",
-        "projectPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Application\\Notes.Application.csproj",
+        "projectPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Application\\Notes.Application.csproj",
         "packagesPath": "C:\\Users\\Deimantas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Application\\obj\\",
+        "outputPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Deimantas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Domain\\Notes.Domain.csproj": {
-                "projectPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Domain\\Notes.Domain.csproj"
+              "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Domain\\Notes.Domain.csproj": {
+                "projectPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Domain\\Notes.Domain.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Domain\\Notes.Domain.csproj": {
+    "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Domain\\Notes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Domain\\Notes.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Domain\\Notes.Domain.csproj",
         "projectName": "Notes.Domain",
-        "projectPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Domain\\Notes.Domain.csproj",
+        "projectPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Domain\\Notes.Domain.csproj",
         "packagesPath": "C:\\Users\\Deimantas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Deimantas\\AppData\\Roaming\\NuGet\\NuGet.Config",

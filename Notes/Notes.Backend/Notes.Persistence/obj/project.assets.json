@@ -1261,11 +1261,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Persistence\\Notes.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Persistence\\Notes.Persistence.csproj",
       "projectName": "Notes.Persistence",
-      "projectPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Persistence\\Notes.Persistence.csproj",
+      "projectPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Persistence\\Notes.Persistence.csproj",
       "packagesPath": "C:\\Users\\Deimantas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Persistence\\obj\\",
+      "outputPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Deimantas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1282,8 +1282,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Application\\Notes.Application.csproj": {
-              "projectPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes.Backend\\Notes.Application\\Notes.Application.csproj"
+            "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Application\\Notes.Application.csproj": {
+              "projectPath": "C:\\Users\\Deimantas\\Desktop\\Csharp projects\\Notes\\Notes.Backend\\Notes.Application\\Notes.Application.csproj"
             }
           }
         }
