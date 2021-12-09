@@ -14,6 +14,5 @@ namespace Notes.Application.Notes.Commands.CreateNote
                 createNoteCommand.UserId).NotEqual(Guid.Empty);
         }
     }
-    {
-    }
+    
 }
