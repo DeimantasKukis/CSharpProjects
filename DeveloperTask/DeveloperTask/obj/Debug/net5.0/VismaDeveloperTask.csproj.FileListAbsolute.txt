@@ -1,5 +1,0 @@
-C:\Users\Deimantas\Desktop\C #\VismaDeveloperTask\VismaDeveloperTask\obj\Debug\net5.0\VismaDeveloperTask.csproj.AssemblyReference.cache
-C:\Users\Deimantas\Desktop\C #\VismaDeveloperTask\VismaDeveloperTask\obj\Debug\net5.0\VismaDeveloperTask.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Deimantas\Desktop\C #\VismaDeveloperTask\VismaDeveloperTask\obj\Debug\net5.0\VismaDeveloperTask.AssemblyInfoInputs.cache
-C:\Users\Deimantas\Desktop\C #\VismaDeveloperTask\VismaDeveloperTask\obj\Debug\net5.0\VismaDeveloperTask.AssemblyInfo.cs
-C:\Users\Deimantas\Desktop\C #\VismaDeveloperTask\VismaDeveloperTask\obj\Debug\net5.0\VismaDeveloperTask.csproj.CoreCompileInputs.cache
