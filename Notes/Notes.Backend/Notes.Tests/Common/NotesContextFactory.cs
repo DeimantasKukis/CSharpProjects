@@ -39,7 +39,7 @@ namespace Notes.Tests.Common
                     CreationDate = DateTime.Today,
                     Details = "Details2",
                     EditDate = null,
-                    Id = Guid.Parse("{A1228D77-1B84-4B12-9C32-5A183953465A}")
+                    Id = Guid.Parse("A1228D77-1B84-4B12-9C32-5A183953465A")
                 },
                 new Note
                 {

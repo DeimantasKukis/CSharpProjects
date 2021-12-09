@@ -10,3 +10,15 @@ C:\Users\Deimantas\Desktop\Csharp projects\Notes.Backend\Notes.Domain\obj\Debug\
 C:\Users\Deimantas\Desktop\Csharp projects\Notes.Backend\Notes.Domain\obj\Debug\net5.0\Notes.Domain.dll
 C:\Users\Deimantas\Desktop\Csharp projects\Notes.Backend\Notes.Domain\obj\Debug\net5.0\ref\Notes.Domain.dll
 C:\Users\Deimantas\Desktop\Csharp projects\Notes.Backend\Notes.Domain\obj\Debug\net5.0\Notes.Domain.pdb
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\bin\Debug\net5.0\Notes.Domain.deps.json
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\bin\Debug\net5.0\Notes.Domain.dll
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\bin\Debug\net5.0\ref\Notes.Domain.dll
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\bin\Debug\net5.0\Notes.Domain.pdb
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\obj\Debug\net5.0\Notes.Domain.csproj.AssemblyReference.cache
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\obj\Debug\net5.0\Notes.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\obj\Debug\net5.0\Notes.Domain.AssemblyInfoInputs.cache
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\obj\Debug\net5.0\Notes.Domain.AssemblyInfo.cs
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\obj\Debug\net5.0\Notes.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\obj\Debug\net5.0\Notes.Domain.dll
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\obj\Debug\net5.0\ref\Notes.Domain.dll
+C:\Users\Deimantas\Desktop\Csharp projects\Notes\Notes.Backend\Notes.Domain\obj\Debug\net5.0\Notes.Domain.pdb

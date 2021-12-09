@@ -10,6 +10,7 @@ using Xunit;
 
 namespace Notes.Tests.Notes.Queries
 {
+    [Collection("QueryCollection")]
     public class GetNoteListQueryHandlerTests
     {
         private readonly NotesDbContext Context;
