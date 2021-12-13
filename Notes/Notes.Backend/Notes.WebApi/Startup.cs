@@ -13,6 +13,7 @@ using Notes.Persistence;
 using Notes.WebApi.Middleware;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -59,7 +60,11 @@ namespace Notes.WebApi
                     options.RequireHttpsMetadata = false;
                 }
                 );
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(config=>
+            {
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+            } );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
