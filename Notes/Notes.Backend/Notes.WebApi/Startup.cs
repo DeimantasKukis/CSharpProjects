@@ -64,8 +64,9 @@ namespace Notes.WebApi
             {
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                config.IncludeXmlComments(xmlPath)
+                config.IncludeXmlComments(xmlPath);
             } );
+            services.AddApiVersioning();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -87,6 +88,7 @@ namespace Notes.WebApi
             app.UseCors("AllowAll");
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseApiVersioning();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
